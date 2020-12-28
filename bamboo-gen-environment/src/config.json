@@ -1,0 +1,34 @@
+{
+  "name": "Bamboo-Environment",
+  "description": "Bamboo environments generator",
+  "type": "executer",
+  "main": "app.js",
+  "execProgram": "node",
+  "exposeRoute": false,
+  "imgUrl": "logo.png",
+  "version": "1.0.0",
+  "settings" : [],
+  "methods": [
+    {
+      "name": "createEnv",
+      "viewName": "Create Environment",
+      "params": [
+        {
+          "name": "name",
+          "viewName": "Name",
+          "type": "string"
+        },
+        {
+          "name": "variables",
+          "viewName": "Variables",
+          "type": "text"
+        },
+        {
+          "name": "dockerImage",
+          "viewName": "Docker Image",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}

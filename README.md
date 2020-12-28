@@ -1,2 +1,2 @@
 # kaholo-plugin-bamboo-gen
-Bamboo yaml generation plugins for Kaholo
+Bamboo yml generation plugins for Kaholo

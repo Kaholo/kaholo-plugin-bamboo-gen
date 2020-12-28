@@ -1,0 +1,124 @@
+{
+  "name": "Bamboo-Task",
+  "description": "Bamboo task generator",
+  "type": "executer",
+  "main": "app.js",
+  "execProgram": "node",
+  "exposeRoute": false,
+  "imgUrl": "logo.png",
+  "version": "1.0.0",
+  "settings" : [],
+  "methods": [
+    {
+      "name": "scriptTask",
+      "viewName": "Script Task",
+      "params": [
+        {
+          "name": "environment",
+          "viewName": "Environment",
+          "type": "string"
+        },
+        {
+          "name": "isFinal",
+          "viewName": "Is Final task",
+          "type": "boolean"
+        },
+        {
+          "name": "commands",
+          "viewName": "Commands",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "cleanTask",
+      "viewName": "Clean Task",
+      "params": [
+        {
+          "name": "environment",
+          "viewName": "Environment",
+          "type": "string"
+        },
+        {
+          "name": "isFinal",
+          "viewName": "Is Final task",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "artifactDownloadTask",
+      "viewName": "Artifact Download Task",
+      "params": [
+        {
+          "name": "environment",
+          "viewName": "Environment",
+          "type": "string"
+        },
+        {
+          "name": "isFinal",
+          "viewName": "Is Final task",
+          "type": "boolean"
+        },
+        {
+          "name": "name",
+          "viewName": "name",
+          "type": "string"
+        },
+        {
+          "name": "destination",
+          "viewName": "destination",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "testParserTask",
+      "viewName": "Test Parser Task",
+      "params": [
+        {
+          "name": "environment",
+          "viewName": "Environment",
+          "type": "string"
+        },
+        {
+          "name": "isFinal",
+          "viewName": "Is Final task",
+          "type": "boolean"
+        },
+        {
+          "name": "type",
+          "viewName": "Type",
+          "type": "options",
+          "options": [
+            {
+              "id": "junit",
+              "name": "JUnit"
+            },
+            {
+              "id": "testng",
+              "name": "TestNG"
+            },
+            {
+              "id": "mocha",
+              "name": "Mocha"
+            },
+            {
+              "id": "nunit",
+              "name": "NUnit"
+            },
+            {
+              "id": "mstest",
+              "name": "MSTest"
+            }
+          ]
+        },
+        {
+          "name": "testResults",
+          "viewName": "Test Results",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
